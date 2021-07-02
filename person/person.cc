@@ -20,18 +20,27 @@ class person
         city=city1;
         
         }
-void showname(){
-cout<<"Name is:"<<endl;
-cout<<name<<endl;
+string  getname(){
+cout<<"Name is:\n";
+return name;
 }
-
+int getage(){
+cout<<"Age is:\n";
+return age;
+}
+string getcity(){
+ cout<<"City is:\n";
+ return city;
+}
 };
 int main(void){
 person p1;
 p1.setname("pesho");
 p1.setage(18);
 p1.setcity("Plovdiv");
-p1.showname();
+p1.getname();
+p1.getage();
+p1.getcity();
 system("pause");
 return 0;
 }
